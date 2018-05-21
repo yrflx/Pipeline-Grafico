@@ -138,7 +138,7 @@ Agora, devemos gerar uma matriz cuja finalidade consiste em realizar uma transi�
 
 ## Ultimo passo: a rasterização
 
-Aqui é onde a gente consegue ver todo o processo (rezando pra funcionar), sendo feita através da utilização do código desenvolvido no trabalho anterior para rasterização de linhas pelo algoritmo de Bresenham. Para isso, basta percorrer o array final face a face e obter seus três vetores com suas coordenadas 2D(x e y) e os passar como paramentros no método DrawTriangleSimples;
+Aqui é onde a gente consegue ver todo o processo (rezando pra funcionar).Sendo a visualização feita através da utilização do código desenvolvido no trabalho anterior para rasterização de linhas pelo algoritmo de Bresenham. Para isso, basta percorrer o array final face a face e obter seus três vetores com suas coordenadas 2D(x e y).Finalizando, basta passar tais vetores como paramentros no método DrawTriangleSimples;
 
 ```C#
     for(int i=0;i<objData->faceCount;i++){
