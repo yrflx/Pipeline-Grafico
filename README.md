@@ -19,15 +19,12 @@ Um pipeline gráfico se resume a passos sequenciais para transformar coordenadas
 * Rasterização;
 
 
-
 ## Obj Loader: Carremento de um objeto 3D
-
 
 Como dito, o script encarregado de fazer o carremento de objetos foi fornecido pelo professor, porém algumas coisas devem ser ditas:
 
 - Estrutura do arquivo;
 - Como usar;
-
 
 ### Estrutura do arquivo
 
@@ -103,6 +100,7 @@ Aqui, obtemos os vetores do objeto e os multiplicamos pela matrizModelViewProjec
         }
      }
 ```
+
 ## Transformação: Espaço “Canônico” para Espaço de Tela;
 
 Agora, devemos gerar uma matriz cuja finalidade consiste em realizar uma transição da nossa imagem para os parametros da tela. Ou seja, um viewPort. A matriz final contém transições e escalas. Por fim devemos aplicar tal matriz na matriz dos vetores que já temos. 
@@ -138,7 +136,6 @@ Agora, devemos gerar uma matriz cuja finalidade consiste em realizar uma transi�
     }
 ```
 
-
 ## Ultimo passo: a rasterização
 
 Aqui é onde a gente consegue ver todo o processo (rezando pra funcionar), sendo feita através da utilização do código desenvolvido no trabalho anterior para rasterização de linhas pelo algoritmo de Bresenham. Para isso, basta percorrer o array final face a face e obter seus três vetores com suas coordenadas 2D(x e y) e os passar como paramentros no método DrawTriangleSimples;
@@ -162,20 +159,22 @@ Aqui é onde a gente consegue ver todo o processo (rezando pra funcionar), sendo
 
 # RESULTADO FINAL
 
-
 ![final](https://github.com/yrflx/Pipeline-Grafico/blob/master/pipelineGrafico/prints/final.png)
 
 O resultado final, pode ser visto nesse vídeo.
-[link text](http://www.youtube.com/watch?v=fIWSNRIqg-Q "Pipeline")
+[Video Youtube](http://www.youtube.com/watch?v=fIWSNRIqg-Q "Pipeline")
 
 
 ## OBSERVAÇÕES
-Houve um bug informado no trabalho I que "soltava" pixels aleatórios pela tela, esse bug fica mais evidente neste projeto, em vista da quantidade maior de rasterizações.
+
+Houve um bug informado no "trabalho I" que "soltava" pixels aleatórios pela tela, esse bug fica mais evidente neste projeto, em vista da quantidade maior de rasterizações.
+
+## DIFICULDADES
+
+Foi um tanto quanto simples usar a GLM, no entanto, ela implementa a multiplicação de matrizes (Cross) de uma maneira inversa da feita no Octave. Sabemos que a ordem dos fatores tem influência no resultado final. Dito isto, foi necessário um certo tempo analísando os resultados para achar tal diferença.Uma outra dificuldade foi entender o funcionamento do obj Loader e, por consequencia, do arquivo ".obj".
 
 ## REFERENCIAS
 
 * As imagens dispostas aqui foram obtidas dos slides de aula do professor.
 * [Biblioteca matrizes](https://glm.g-truc.net/0.9.8/index.html)
 * Exemplo usando OpenGL e script do pipeline no octave.
-
- 
