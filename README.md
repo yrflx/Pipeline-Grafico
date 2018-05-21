@@ -1,5 +1,5 @@
 # Pipeline Grafico 
-================  
+
 
 Este repositório se destina a apresentar os resultados da implementação de um pipeline gráfico. Sendo motivado pela "Tarefa 2" da disciplina de Introdução à Computação Gráfica na UFPB.Para tal, foi disponibilizado pelo prof. Christian Azambuja Pagot, um "Object Loader" com o objetivo de importar arquivos ".obj" para a aplicação desenvolvida em C++.
 
