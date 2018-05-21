@@ -61,7 +61,7 @@ Até então apenas temos um objeto posicionado, mas precisamos definir a posiç�
 
  ![vetores Camera](https://github.com/yrflx/Pipeline-Grafico/blob/master/pipelineGrafico/prints/vetoresCamera.png)
 
-![matrizes](https://github.com/yrflx/Pipeline-Grafico/blob/master/pipelineGrafico/prints/matrizesCamera.png)
+![matrizes](https://github.com/yrflx/Pipeline-Grafico/blob/master/pipelineGrafico/prints/matrizes.png)
 
 Com isso, podemos obter a matrizView
 ```C#
@@ -169,5 +169,13 @@ O resultado final, pode ser visto nesse vídeo.
 [link text](http://www.youtube.com/watch?v=fIWSNRIqg-Q "Pipeline")
 
 
+## OBSERVAÇÕES
+Houve um bug informado no trabalho I que "soltava" pixels aleatórios pela tela, esse bug fica mais evidente neste projeto, em vista da quantidade maior de rasterizações.
 
+## REFERENCIAS
 
+* As imagens dispostas aqui foram obtidas dos slides de aula do professor.
+* [Biblioteca matrizes](https://glm.g-truc.net/0.9.8/index.html)
+* Exemplo usando OpenGL e script do pipeline no octave.
+
+ 
